@@ -1,0 +1,328 @@
+/**
+ * Main Stylesheet for index1.html
+ *
+ * @since: 0.1.0
+ */
+
+
+/* LOADS WEBFONTS */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Anaheim);
+@import url(http://fonts.googleapis.com/css?family=Yesteryear);
+
+/* mobile */
+@media (max-width: 767px) {
+.carousel-caption h4{
+font-size:40%;
+}
+.carousel-caption p{
+font-size:40%;
+}
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+.carousel-caption h4{
+font-size:60%;
+}
+.carousel-caption p{
+font-size:60%;
+}
+}
+/* laptop */
+@media (min-width: 992px) and (max-width: 1199px) { .carousel-caption h4{
+font-size:80%;
+}
+.carousel-caption p{
+font-size:80%;
+}
+}
+/* large screen */
+@media (min-width: 1200px) { .carousel-caption h4{
+font-size:100%;
+}
+.carousel-caption p{
+font-size:100%;
+}
+}
+
+h1, h2, h3, h4 {
+    /*font-family: 'Yesteryear', sans-serif;*/
+    font-weight: 150;
+}
+
+h3 {
+    font-family: 'Yesteryear', sans-serif;
+
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/*do I need that if I defined it for body?*/
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+.decorative{
+    font-family: 'Yesteryear', sans-serif;
+    font-weight: 150;
+}
+
+html {
+    background-color: #FFFFFF; <!-- white -->
+}
+
+ /*added
+.carousel-caption h4, p{
+color: #2a6496 ;
+font-size:50%;
+}
+*/
+
+ /*added
+.carousel-caption h4, p{
+color: #2a6496 ;
+font-size:50%;
+}
+*/
+
+.carousel-caption
+{
+background-color: #333 ;
+}
+
+.thumbnail {
+padding:4px;
+    border:1px solid #DDD;
+    -moz-box-shadow: 5px 5px 7px #999;
+    box-shadow: 5px 5px 7px #999;
+    -webkit-box-shadow: 5px 5px 7px #999;
+    /* added thumbnail test, effect: it made thumbnails more square */
+    overflow:hidden;
+}
+
+/* added thumbnail test - doesn't work! */
+.thumbnail img:hover{
+transform: scale(1,1);
+}
+
+.thumbnail img{
+transform: all 0.3s ease 0s;
+width:100%;
+}/* END test */
+
+
+.top {
+    background-color: #474747;
+}
+
+.top .navbar-brand {
+    height: 50px;
+    width: 291px;
+    line-height: 50px;
+    text-align: left;
+    padding: 0 10px;
+
+    /*background-color: #CCC; light grey */
+    background: -webkit-linear-gradient(left, #CCC , #474747); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #CCC , #474747); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #CCC , #474747); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #CCC , #474747); /* Standard syntax (must be last) */
+
+
+    color: #00688b;
+    text-decoration: none;
+    font-family: 'Yesteryear', cursive;
+    font-size:25px;
+    margin-right:350px;
+}
+
+.top .container {
+    padding: 0;
+}
+
+.slider {
+background-color: #474747;
+}
+
+.slider .container {
+  height: 100%;
+  padding: 15px 30px 45px 30px;
+
+  background-image: url(../includes/img/Slider_Shadows_style.jpg);/*background-color: #ccc;*/
+  background-repeat: no-repeat;
+  background-position:center bottom;
+}
+
+.slider .container p {
+
+    padding-left: 5px;
+    font-weight: 300;
+}
+
+.middle {
+    background-color: #474747;
+}
+
+.middle .container {
+    background-color: #FFF;
+    min-height: 300px;
+    padding-bottom: 20px;
+}
+
+.col-md-9  .row {
+margin-bottom:50px;
+}
+
+.navbar-nav li a {
+    color: #CCC;
+    font-family: 'Lato', sans-serif;
+   }
+
+.navbar-nav li a:hover {
+    background-color: #373737;
+}
+
+/* nav links test */
+.navbar-nav .active >a{
+    color: #FFFFFF;
+}
+/* END test */
+
+
+
+/* do I need that? */
+.nav-pills > li > a {
+color: #00688B;
+}
+
+.bottom .nav-pills  li  a:hover {
+
+background-color: #2D2D2D;
+}
+
+.bottom {
+    background-color: #474747;
+}
+
+.bottom .container {
+    background-color: #373737;
+    min-height: 150px;
+}
+
+.bottom .container h3 {
+    color: #999;
+}
+
+.bottom .container p {
+    color: #666;
+}
+
+.navbar-toggle {
+    color: #00688b;
+    font-size: 32px;
+    margin: 3px;
+    padding: 2px 5px;
+    line-height: 32px;
+}
+
+.navbar-toggle:hover {
+    background-color: #373737;
+}
+
+.navbar-nav {
+    margin: 0;
+}
+
+/* added to align nav buttons to right and left of container */
+.navbar-collapse {
+    padding-right: 0px;
+padding-left: 0px;
+}
+
+.content p {
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.to-tutorial {
+    text-align: center;
+}
+
+#sidecontainer {
+	margin: 0px auto 0px auto; /* centered */
+	/*width: 400px;*/
+}
+
+.bubble {
+	clear: both;
+	margin: 20px auto;
+	width: 220px;
+	border-style: outset;
+	background: #fff;
+	-moz-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -webkit-border-radius: 10px;
+	 -moz-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+   -khtml-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+	position: relative;
+	z-index: 90; /* the stack order: displayed under ribbon rectangle (100) */
+}
+
+.rectangle {
+	background: #7f9db9;
+	height: 50px;
+	width: 245px;
+	position: relative;
+	left:-15px;
+	top: 10px;
+	float: left;
+	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+  -khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+  -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	z-index: 100; /* the stack order: foreground */
+}
+
+.rectangle h3 {
+text-align: center;
+font-size: 25px;
+margin-top: 15px;
+}
+
+/*.rectangle h2 {
+	font-size: 30px;
+	color: #fff;
+	padding-top: 6px;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	text-align: center;
+}*/
+
+.triangle-l {
+	position: relative;
+	left: -30px;
+	top: 45px;
+
+	height:0px;
+	width:0px;
+  border-style:solid;
+	border-width:15px;
+  border-color: transparent;
+  border-right-color: #7d90a3;
+
+	z-index: -1; /* displayed under bubble */
+}
+
+.triangle-r {
+	border-color: transparent transparent transparent #7d90a3;
+	border-style:solid;
+	border-width:15px;
+	height:0px;
+	width:0px;
+	position: relative;
+	left: 215px;
+	top: 15px;
+
+  z-index: -1; /* displayed under bubble */
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- TODO: on 691px<SCREEN<767px vertical toggle eats letters. Fix! -->
+
+<head>
+    <meta charset="utf-8">
+    <!-- Set the viewport so this responsive site displays correctly on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Iwona's universe </title>
+
+    <!-- Include CSS (bootstrap and custom) -->
+    <link rel="stylesheet" href="includes/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="includes/style1.css">
+
+    <!-- Include fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Yesteryear">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Anaheim">
+
+    <!-- jQuery, bootstrap scripts -->
+    <script src="includes/jquery/jquery-1.11.1.js"></script>
+    <script src="includes/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- custom scripts -->
+    <script>
+    function changeText(str){
+    var newtext=str;
+    var elem = window.document.getElementById("logo");
+    elem.innerHTML=str;
+    }
+
+    function ReturnText() {
+    		document.getElementById("logo").innerHTML = "Iwona";
+    }
+    function PlaySound() {
+    		document.getElementById("logo").innerHTML = "Iwona";
+    }
+    </script>
+
+
+    <!-- audio file -->
+    <audio id="rain" src="includes/img/rain.mp3" preload="auto" loop="true" HIDDEN=TRUE controls></audio>
+
+</head>
+
+<body>
+    <!-- Header and navigation -->
+    <header class="top" role="header">
+        <div class="container">
+            <a id="logo" href="#" class="navbar-brand pull-left" onmouseover="document.getElementById('rain').play(), changeText('Iwona loves rain')"   onmouseout="document.getElementById('rain').pause(), ReturnText() ">
+                Iwona <span></span>
+            </a>
+            <!-- a button to the right, appears when resolution shrinks (to make navigation vertical not horizontal) -->
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="glyphicon glyphicon-align-justify"></span>
+            </button>
+            <nav class="navbar-collapse collapse" role="navigation">
+                <ul class="navbar-nav nav">
+                    <li class="active"><a href="#"  onmouseover="changeText('Iwona is home')" onmouseout="ReturnText()">Home</a></li>
+                    <li><a href="#" onmouseover="changeText('Iwona researches & executes')" onmouseout="ReturnText()">Current Projects</a></li>
+                    <li><a href="#" onmouseover="changeText('Iwona when inspired...')" onmouseout="ReturnText()">Art</a></li>
+                    <li><a href="https://www.linkedin.com/in/iwonarejmus" onmouseover="changeText('Iwona wants to contribute')" onmouseout="ReturnText()">Research</a></li>
+                    <li><a href="https//:sagas2sagas.wordpress.com" onmouseover="changeText('Iwona shares words')" onmouseout="ReturnText()">Education</a></li>
+                    <li><a href="https//:sagas2sagas.wordpress.com" onmouseover="changeText('Iwona hunts & cherishes')" onmouseout="ReturnText()">Technology</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Photo slider (Carousel)-->
+    <div class="slider">
+     <div class="container">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+     		 <!-- Slider Content (Wrapper for slides ) http://www.sitepoint.com/creating-javascript-sliders-using-twitter-bootstrap-3/-->
+     		 <div class="carousel-inner">
+     		   <div class="item active">
+     			     <img src="includes/img/Ulrikasbryllup1170_468.jpg" alt="huntress of gold">
+      		     <div class="carousel-caption">
+          		  <h4>Workshop- and Experience-Designer</h4>
+          		  <p>Ambassador for New Education </p>
+         		   </div>
+       		   </div>
+
+      		  <div class="item">
+     			     <img src="includes/img/doors1170_468.jpg" alt="Portable Door">
+      		     <div class="carousel-caption">
+          		  <h4>Technical, Bilingual and Communicative</h4>
+          		  <p>Dynamic Octopus for your Web/Software Development Team</p>
+         		   </div>
+       		  </div>
+
+       		  <div class="item">
+     			     <img src="includes/img/businessontheshore1170_468.jpg" alt="Stocznia Gdanska">
+      		     <div class="carousel-caption">
+          		  <h4>Interactive Performance Artist</h4>
+          		  <p>Representative, Immersive...and weird </p>
+         		   </div>
+       		  </div>
+
+       		  <div class="item">
+     			     <img src="includes/img/carryPolandinside1170_468.jpg" alt="Poland inside of me">
+      		     <div class="carousel-caption">
+          		  <h4>Interactive Performance Artist</h4>
+          		  <p>Representative, Immersive...and weird </p>
+         		   </div>
+       		  </div>
+
+
+       		  <div class="item">
+     			     <img src="includes/img/elementsintegrationBW1170_468.jpg" alt="elements integrated">
+      		     <div class="carousel-caption">
+          		  <h4>All about People.</h4>
+          		  <p>Interdisciplinary Researcher, Interviewer and Analyst</p>
+         		   </div>
+       		  </div>
+
+      		</div> <!--END .carousel-inner-->
+
+
+          <!-- Carousel Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+
+          <!-- Carousel Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          </ol>
+
+     </div>
+    </div> <!--END .slider.container-->
+   </div> <!--END .slider-->
+
+
+
+  <!-- Middle content -->
+  <div class="middle">
+    <div class="container">
+      <div class="col-md-9 content">
+            <div class="row">
+				        <h3>Let me invite you to my virtual universe, where you can self-navigate to discover different sides of me...</h3>
+                <p>whether you are a friend, an employee, a potential partner, collaborator or a curious stranger, I hope you will find a taste of something relevant and inspiring here... an eclectic dimension of the creative, the professional, the private and random that might be extended on a face-to-face basis.</p>
+                <div class="to-tutorial">
+                  <p><strong>Below I placed some selected "visual" words". See if you enjoy/disagree/get triggered/feel inspired...</strong></p>
+                </div>
+            </div>
+
+      <!-- 2nd row  Thumbnails ARTICLES (CHECK OR DELETE!)-->
+  		<div class="row">
+
+
+      <div class="col-xs-6 col-sm-3 col-md-3">
+        <a href="includes/img/agentRejmusLarge.jpg"  class="thumbnail">
+           <img src="includes/img/agentRejmusSmall.jpg"
+           alt="Generic placeholder thumbnail">  <!-- original size small 100x100  -->
+        </a>
+        <div class="caption">
+           <h3>Thumbnail label</h3>
+           <p>Some sample text. Some sample text.</p>
+        </div>
+      </div>
+
+      <div class="col-xs-6 col-sm-3 col-md-3">
+        <a href="http://blog.elementsconnected.com/2014/11/22/on-modern-myths-of-value/" title="On modern myths"  class="thumbnail">
+           <img src="includes/img/agentRejmusSmall.jpg"
+           alt="Generic placeholder thumbnail">  <!-- original size small 100x100  -->
+        </a>
+        <div class="caption">
+           <h3>On modern myths</h3>
+           <p>Some sample text. Some sample text.</p>
+        </div>
+      </div>
+
+      <div class="col-xs-6 col-sm-3 col-md-3">
+        <a href="https://sagas2sagas.wordpress.com/2013/01/02/intention-yes-please-but-not-goal-orientation/" title="intention? yes, please, but not goal-orientation"  class="thumbnail">
+           <img src="includes/img/agentRejmusSmall.jpg"
+           alt="Generic placeholder thumbnail">  <!-- original size small 100x100  -->
+        </a>
+        <div class="caption">
+           <h3>Thumbnail label</h3>
+           <p>Some sample text. Some sample text.</p>
+        </div>
+      </div>
+
+      <div class="col-xs-6 col-sm-3 col-md-3">
+        <a href="http://blog.elementsconnected.com/2015/01/07/on-showing-oneself/" title="On modern myths"  class="thumbnail">
+           <img src="includes/img/agentRejmusSmall.jpg"
+           alt="Generic placeholder thumbnail">  <!-- original size small 100x100  -->
+        </a>
+        <div class="caption">
+           <h4>On showing oneself.</h4>
+           <p>{BLOGGING, LIFE STORIES, SECRETS AND TRIVIALITIES}</p>
+        </div>
+      </div>
+
+   </div>  <!-- end 2nd row -->
+
+   <!-- 3rd row empty (CHECK OR DELETE!)-->
+   <div class="row">
+                <div class="to-tutorial">
+                   <!-- <p><strong>Visit the tutorial now to learn more:</strong></p>   -->
+                  <!--  <a href="http://www.revillweb.com/tutorials/bootstrap-tutorial/" class="btn btn-success">MORE ARTICLES...</a> -->
+                </div>
+
+   </div> <!-- end 3rd row -->
+
+   <!-- follow on facebook (CHECK OR DELETE!)
+          <iframe src="//www.facebook.com/plugins/follow?href=https%3A%2F%2Fwww.facebook.com%2Fiwona.rejmus&amp;layout=standard&amp;show_faces=true&amp;colorscheme=light&amp;width=450&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe>
+   -->
+
+  </div>  <!-- END middle.container.col-md-9 -->
+
+  <!-- Side Container -->
+  <div class="col-md-3">
+    <div id="sidecontainer">
+           <div class="bubble">
+              <div class="rectangle decorative"><h3>Inspirations</h3></div>
+              <div class="triangle-l"></div> <!-- Left triangle -->
+              <div class="triangle-r"></div> <!-- Right triangle -->
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="http://www.goodreads.com/book/show/1246177.If_I_Told_You_Once" target="_blank"><strong>B</strong>ook I"d swallow</a></li>
+                    <li><a href="http://frankchimero.com" target="_blank">Blog I"d follow</a></li>
+                    <li><a href="https://images.search.yahoo.com/images/view;_ylt=AwrB8p2uQk9Vk2kACwmJzbkF;_ylu=X3oDMTIza29rZ3R0BHNlYwNzcgRzbGsDaW1nBG9pZANiM2RkOWU2OTllYzA4NzI3MzhjNDk0YTkyOTcxM2JjNQRncG9zAzM3BGl0A2Jpbmc-?.origin=&back=https%3A%2F%2Fimages.search.yahoo.com%2Fsearch%2Fimages%3Fp%3DLeba%2BPoland%26fr%3Daaplw%26tab%3Dorganic%26ri%3D37&w=1300&h=957&imgurl=thumbs.dreamstime.com%2Fz%2Fdunes-leba-poland-national-park-27426542.jpg&rurl=http%3A%2F%2Fwww.dreamstime.com%2Fstock-photography-dunes-leba-poland-national-park-image27426542&size=202.9KB&name=Stock+Photography%3A+Dunes+in+%3Cb%3ELeba+-+Poland%3C%2Fb%3E.+National+park.&p=Leba+Poland&oid=b3dd9e699ec0872738c494a929713bc5&fr2=&fr=aaplw&tt=Stock+Photography%3A+Dunes+in+%3Cb%3ELeba+-+Poland%3C%2Fb%3E.+National+park.&b=0&ni=21&no=37&ts=&tab=organic&sigr=12p565gdt&sigb=12m0d0i96&sigi=124jp0a1s&sigt=1205mosp5&sign=1205mosp5&.crumb=IB5BxEgph2R&fr=aaplw" target="_blank"><strong>S</strong>ite to pass by</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=wmDIjqRmQco&spfreload=10" target="_blank">Song for lullaby</a></li>
+
+                    <li><a href="http://www.rogerebert.com/reviews/eternal-sunshine-of-the-spotless-mind-2004-1" target="_blank"><span class="decorative">F</span>ilm not to miss</a></li>
+                    <li><a href="http://www.thisiscolossal.com/2013/09/one-giant-leap-frog-photobombs-nasa-spacecraft-launch-photo/" target="_blank">Frog I"d kiss</a></li>
+                     <li><a style="text-align:right;" href="http://www.elementsconnected.com/words-that-want-to-tell-us-something/"  target="_blank">...and a <span class="decorative">Poem</span></a></li>
+                </ul>
+
+            </div>    <!--- end .bubble  -->
+      </div>   <!-- end #sidecontainer -->
+  </div>  <!-- end middle.container.col-md-3  (Side Container)-->
+
+
+
+</div>   <!-- end .container-->
+ </div> <!-- end .middle-->
+
+
+ <!-- Site footer -->
+ <div class="bottom">
+        <div class="container">
+            <div class="col-md-4 ">
+                <h3> Recommended & external</h3>
+
+                <ul class="nav nav-pills nav-stacked">
+                <li> <a href="http://worldsbestnews.dk" target="_blank">Verdens Bedste Nyheder</a>  </li>
+                    <li><a href="https://www.thevenusproject.com/en/" target="_blank">Sustainably: Culture and Design</a></li>
+                    <li><a href="http://www.sistersacademymalmo.se/in-residence/" target="_blank">Ideas for (new) life </a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Stay in touch</h3>
+
+                <ul class="nav nav-pills nav-stacked">
+                <li><a href="#">RSS</a> </li>
+                <li> <a href="#" data-toggle="modal" data-target="#basicModal">Mailing List</a> </li>
+                <li><a href="https://www.linkedin.com/in/iwonarejmus" target="_blank">(Linkedin)CV</a></li>
+                <li><a href="http://www.elementsconnected.com/" target="_blank">blog</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 decorative">
+                <h3 style="font-size:18px;">© Copyright 2016 Iwona Rejmus</h3>
+
+                <h3 style="font-size:18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ all that inspired, and I customized...</h3>
+
+                <h3 style="font-size:18px;">Site last updated 1 august 2016</h3>
+            </div>
+        </div>
+  </div> <!-- END .bottom (Site footer) -->
+
+
+  <!-- Modal plugin (CHECK OR DELETE!)-->
+  <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                  <h3>Modal Body</h3>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+      </div>
+     </div>
+  </div> <!-- END .modal fade -->
+
+
+  <!-- Modal for photos from Udacity -->
+  <div class="modal fade" id="photopopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+                  </div>
+                  <div class="modal-body">
+                      <img class="img-responsive" src="images/abandonedlibrary_byGovernmetEntertainment.jpg">
+                      This was my first project in this class. I learned a lot about HTML and CSS.
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+    </div>
+
+</body>
+</html>
