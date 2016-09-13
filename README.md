@@ -1,0 +1,2 @@
+# Iwona.s_webspace-project
+creating this site by myself...slowly, yet determined - like a step-by-step ritual of using what already exists, customizing, combining. I want to work with people, digital expression is one tool. I prefer face-to-face. But I want to learn web &amp; design, enough to contribute as an inspiring consultant with hands-on frontend skills. I am searching for a job in Copenhagen. So humbly sharing work in progress. 
